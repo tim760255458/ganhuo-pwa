@@ -1,37 +1,37 @@
 import Vue from 'vue';
 import Router from 'vue-router';
 
-    
+
 import _15448770104029d49a922ebc8a6d77ca82c0a74289b98 from '@/pages/Appshell.vue';
-    
 
-    
+
+
 import _1544877010402f7fc7554d202a317883db2ae067316d3 from '@/pages/detail/_id.vue';
-    
 
-    
+
+
 import _1544877010402d2462dcf0c7beccd286c658e08187914 from '@/pages/Error.vue';
-    
 
-    
+
+
 import _154487701040267830448037326425509e44bce7632b7 from '@/pages/Index.vue';
-    
 
-    
+
+
 import _15448770104023ab07ba665885c797b127f598464540d from '@/pages/read/_tag.vue';
-    
 
-    
+
+
 import _1544877010402038de326b0270e97f9eef95b6bc74ed7 from '@/pages/Search.vue';
-    
 
-    
+
+
 import _154487701040293d3a859f5e8f750157ae8381a8c15d8 from '@/pages/type/_type.vue';
-    
 
-    
+
+
 import _154487701040243b75c5eb87bd5901f72e9a192cf7c5b from '@/pages/Xiandu.vue';
-    
+
 
 
 let routes = [
@@ -349,7 +349,7 @@ export function createRouter() {
 
 
 
-    
+
     if (process.env.VUE_ENV === 'client') {
         if (supportHistory) {
             initHistoryStateStack();
@@ -358,15 +358,15 @@ export function createRouter() {
             initHistoryArrayStack(router.options.base);
         }
     }
-    
+
 
     router.beforeEach((to, from, next) => {
         if (router.app.$store) {
             if (router.app.$store.state.pageTransition.enable) {
-                
+
                 let effect = isForward(to, from) ? 'slide-left'
                     : 'slide-right';
-                
+
                 router.app.$store.commit('pageTransition/setType', 'slide');
                 router.app.$store.commit('pageTransition/setEffect', effect);
             }
