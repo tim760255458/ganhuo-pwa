@@ -1,6 +1,6 @@
 import Vue from 'vue';
 
-import Skeleton from 'D:\\CODE\\ganhuo-pwa\\core\\Skeleton.vue';
+import Skeleton from 'E:\\work\\study-vue-cli\\node\\ganhuo-pwa\\core\\Skeleton.vue';
 
 
 export default new Vue({

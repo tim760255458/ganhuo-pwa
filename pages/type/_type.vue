@@ -7,13 +7,19 @@
                         <v-card
                             ripple
                         >
-                            <v-card-title @click="openContentPage(item.url)" primary-title class="card-title-default">
+                            <v-card-title @click="item.type != '福利' ? openContentPage(item.url) : null" primary-title class="card-title-default">
                                 {{ item.desc }}
                             </v-card-title>
                             <v-card-media
                                 :height="150"
                                 v-if="item.images"
                                 :src="item.images ? item.images[0] : null"
+                            ></v-card-media>
+                            <v-card-media
+                                height="300"
+                                contain
+                                v-else-if="item.type == '福利'"
+                                :src="item.url ? item.url : null"
                             ></v-card-media>
                         </v-card>
                     </v-flex>

@@ -1,5 +1,5 @@
 {
-    "buildVersion": 1544877010352,
+    "buildVersion": 1544942146533,
     "build": {
         "ssr": false,
         "publicPath": "/",
@@ -26,7 +26,7 @@
     },
     "serviceWorker": {
         "enable": true,
-        "swDest": "D:\\CODE\\ganhuo-pwa\\dist\\service-worker.js"
+        "swDest": "E:\\work\\study-vue-cli\\node\\ganhuo-pwa\\dist\\service-worker.js"
     },
     "skeleton": {
         "enable": true,
