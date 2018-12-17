@@ -10,4 +10,6 @@ const workboxSW = new WorkboxSW({
 // Define precache injection point.
 workboxSW.precache([]);
 
-workboxSW.router.registerRoute(/^https:\/\/gank\.io\/api\//, workboxSW.strategies.staleWhileRevalidate());
+workboxSW.router.registerNavigationRoute('/appshell');
+
+workboxSW.router.registerRoute(/^https:\/\/gank\.io\/api\//, workboxSW.strategies.networkFirst());
