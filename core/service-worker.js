@@ -20,8 +20,8 @@ workbox.precaching.precacheAndRoute(self.__precacheManifest || []);
 /**
  * example runningCache with api
  */
-// workbox.routing.registerRoute(/^https:\/\/lavas\.baidu\.com\/some\/api/,
-//     workbox.strategies.networkFirst());
+workbox.routing.registerRoute(/^https:\/\/gank\.io\/api\//,
+    workbox.strategies.networkFirst());
 
 
 /**
