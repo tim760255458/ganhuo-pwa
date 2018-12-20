@@ -14,6 +14,7 @@
                                 :img="value.icon"
                                 height="100"
                                 ripple
+                                dark
                                 class="elevation-4"
                             >
                             </v-card>

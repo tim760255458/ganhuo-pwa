@@ -6,6 +6,7 @@
                     <v-flex xs12 :key="item._id">
                         <v-card
                             ripple
+                            dark
                             class="elevation-2"
                         >
                             <v-card-title @click="openContentPage(item.url)" primary-title class="card-title-default">

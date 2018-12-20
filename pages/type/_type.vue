@@ -6,6 +6,7 @@
                     <v-flex xs12 :key="item._id">
                         <v-card
                             ripple
+                            dark
                         >
                             <v-card-title @click="item.type != '福利' ? openContentPage(item.url) : null" primary-title class="card-title-default">
                                 {{ item.desc }}

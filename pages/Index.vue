@@ -7,7 +7,7 @@
             </div>
         </div> -->
         <template v-for="(value, key) of todayData">
-            <v-list three-line :key="key">
+            <v-list dark three-line :key="key">
                 <v-subheader
                     :key="key"
                 >
